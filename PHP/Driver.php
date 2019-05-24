@@ -24,6 +24,17 @@ class Driver
            $e->getMessage();
         }
     }
+
+    function getPhone($session){
+        try{
+            $stmt=$this->DB_con->prepare("select phonenumber from sessionlevels where sessionId =:session");
+            $stmt->bindParam(':session',$session);
+            $stmt->execute();
+            return $stmt->fetch(PDO::FETCH_ASSOC)['phonenumber'];
+        }catch(Exception $e){
+           $e->getMessage();
+        }
+    }
  
     function insertLevel($sessionId,$phoneNumber,$level){
         try{

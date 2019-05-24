@@ -1,8 +1,7 @@
 <?php
-// include 'Driver.php';
-// $driver = new Driver();
+include 'Driver.php';
+$driver = new Driver();
 
-// $test = $driver->insertInfo("+254705336634","Liz Kathure","3", "2019-03-12");
+$phoneNumber = $driver->getPhone("ATUid_5141b9a0886e9d17cfb8411ec36e8544");
 
-$test= date('Y-m-d');
 echo $test;
