@@ -1,4 +1,6 @@
 <?php
+//this is the script that get's notified when users send an SMS to request a loan.
+// We send a B2C request from here.
 require 'vendor/autoload.php';
 use AfricasTalking\SDK\AfricasTalking;
 

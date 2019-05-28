@@ -4,8 +4,10 @@ use AfricasTalking\SDK\AfricasTalking;
 include 'Driver.php';
 
 $driver = new Driver();
-$username = "username";
-$apikey = "apikey";
+
+$username   = "sandbox";
+$apiKey     = "828172913521d3b62c0a4c931c4b703f822645793640bec7e0b3f10b1200e829";
+
 $AT         = new AfricasTalking($username, $apikey);
 // Get the payments service
 $sms   = $AT->sms();

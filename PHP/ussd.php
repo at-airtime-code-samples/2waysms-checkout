@@ -47,6 +47,7 @@ else if($level == 2){
     
     
     // At this point you process your request and send an SMS confirmation
+    //add a cron job that will send an SMS confirmation for successful registration
 
     require "sms.php";
     
